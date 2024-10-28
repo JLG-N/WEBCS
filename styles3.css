@@ -1,0 +1,255 @@
+body {
+    font-family: "Inknut Antiqua";
+    color: #333;
+    line-height: 1.6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: whitesmoke;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.logo img {
+    margin-top: -10px;
+    margin-bottom: -20px;
+    width: 80px;
+}
+
+.nav-links {
+    font-size: x-large;
+    padding-top: 10px;
+    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #ff0000;
+}
+
+.icon {
+    display: none;
+}
+
+.features {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 100px;
+}
+
+.features h2 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.news-section {
+    padding: 2rem 3rem;
+    text-align: center;
+    background-color: white;
+}
+
+.news-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    color: red;
+}
+
+.news-content {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.news-item {
+    max-width: 400px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.news-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: auto; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 1.5rem;
+}
+
+.social-icons a img {
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    #nav-links.show {
+        display: flex; 
+    }
+
+    .news-section {
+        padding: 1rem; 
+    }
+
+    .news-item {
+        margin-bottom: 1rem; 
+        text-align: center; 
+    }
+
+    .news-item img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .news-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    nav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav a:hover {
+        background-color: whitesmoke;
+        color: #ff0000;
+    }
+
+    #nav-links {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #nav-links a {
+        display: block;
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #nav-links a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .nav-links li a:hover {
+        background-color: #555;
+        transition: 0.3s;
+    }
+
+    .logo img {
+        width: 60px; 
+    }
+
+    .features h2 {
+        font-size: 1.5rem; 
+    }
+
+    .news-item {
+        padding: 0.5rem;
+    }
+
+    .news-item h3 {
+        font-size: 1.2rem; 
+    }
+
+    .news-item p {
+        font-size: 0.9rem; 
+    }
+
+    footer {
+        font-size: 12px; 
+        text-align: center; 
+    }
+
+    .social-icons a img {
+        width: 20px; 
+    }
+}

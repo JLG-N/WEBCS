@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing You Studio</title>
+    <link rel="stylesheet" href="styles6.css">
+    <link rel="icon" href="https://media.tenor.com/ArGAyLkFH2oAAAAi/flowing-heart-heart.gif" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://img.favpng.com/17/15/20/logo-vector-graphics-graphic-design-royalty-free-png-favpng-CpuDsMKFaeYaKchYg7TPyg9f3.jpg" alt="Missing You Studio Logo">
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Company.html">Company</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="https://www.playstation.com/en-ph/">Shop</a></li>
+                <li><a href="Job.html">Jobs</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <section class="features">
+        <h1><span class="highlight">MISSING</span> YOU STUDIOS</h1>
+    </section>
+
+    <!-- Job Application Section -->
+    <section class="job-application">
+        <h1>Apply to PROGRAMMING - Senior Programmer</h1>
+        
+        <div class="application-container">
+            <div class="application-form">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label for="ethnicity">Ethnicity</label>
+                    <input type="text" id="ethnicity" name="ethnicity" required>
+    
+                    <label for="gender">Gender</label>
+                    <input type="text" id="gender" name="gender" required>
+    
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    
+                    <label for="resume">Upload Resume</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    
+                    <div class="button-container">
+                        <button type="button" class="custom-file-upload" onclick="document.getElementById('resume').click();">
+                            Attach File <span id="file-name"></span>
+                        </button>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="job-description">
+                <p>We aren’t currently looking to fill a specific role, but we are always interested in seeing talent. If you have knowledge, experience, and a passion for C++, we’d love to look at your resume. Generally, our engineers contribute to multiple areas of the project, so if you’ve done good work elsewhere, that experience is likely to be useful at Sucker Punch.</p>
+                
+                <ul>
+                    <li>5+ years programming experience in the gaming industry.</li>
+                    <li>Experience designing and working with complex, large-scale software projects.</li>
+                    <li>Experience optimizing large code bases.</li>
+                    <li>Strong fluency in C++.</li>
+                    <li>BS or higher in Computer Science or a related discipline.</li>
+                </ul>
+    
+                <p>Applicants should expect to take an assessment as a first step of the application. Applicants must be able to work in the Philippines. Most of our programming roles are hybrid or on-site in Pampanga, San Fernando City.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2001-2024 MISSING YOU STUDIOS. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.x.com/"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2082370165.1729296000&semt=ais_hybrid" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Instagram_logo.png" alt="Instagram"></a>
+            <a href="https://youtube.com/"><img src="https://static-00.iconduck.com/assets.00/youtube-icon-2048x1437-0zwl4mo9.png" alt="YouTube"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+        // File upload preview
+        document.getElementById('resume').addEventListener('change', function() {
+            var fileInput = document.getElementById('resume');
+            var fileName = fileInput.files.length ? fileInput.files[0].name : "No file selected";
+            document.getElementById('file-name').innerText = fileName;
+        });
+
+        // Form submission confirmation popup
+        document.querySelector('.application-form form').addEventListener('submit', function(event) {
+            // Show a confirmation message
+            var confirmSubmission = confirm("Are you sure you want to submit your application?");
+            
+            if (!confirmSubmission) {
+                // If the user clicks "Cancel", prevent the form from submitting
+                event.preventDefault();
+            } else {
+                alert("Your application has been submitted successfully!");
+            }
+        });
+        function myFunction() {
+          var x = document.getElementById("nav-links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+</body>
+</html>
