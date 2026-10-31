@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missing You Studio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="https://media.tenor.com/ArGAyLkFH2oAAAAi/flowing-heart-heart.gif" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -18,15 +18,16 @@
             <div class="logo">
                 <img src="https://img.favpng.com/17/15/20/logo-vector-graphics-graphic-design-royalty-free-png-favpng-CpuDsMKFaeYaKchYg7TPyg9f3.jpg" alt="Missing You Studio Logo">
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <button type="button" class="icon" aria-label="Toggle navigation" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
+            </button>
             <ul id="nav-links" class="nav-links">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="News.html">News</a></li>
-                <li><a href="Company.html">Company</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="pages/Home.html">Home</a></li>
+                <li><a href="pages/News.html">News</a></li>
+                <li><a href="pages/Company.html">Company</a></li>
+                <li><a href="pages/Contact.html">Contact</a></li>
                 <li><a href="https://www.playstation.com/en-ph/">Shop</a></li>
-                <li><a href="Job.html">Jobs</a></li>
+                <li><a href="pages/Job.html">Jobs</a></li>
             </ul>            
         </nav>
     </header>
@@ -86,7 +87,7 @@
                 <p>We specialize in building immersive open-world experiences</p>
             </div>
         </div>
-        <a href="News.html" class="learn-more-btn-3">SEE WHAT WE'RE UP TO</a>
+        <a href="pages/News.html" class="learn-more-btn-3">SEE WHAT WE'RE UP TO</a>
     </section>
 
     <!-- New Game, Same Team Section -->
@@ -99,7 +100,7 @@
     <section class="join-us">
         <h2>JOIN OUR <span class="highlight">TEAM</span> NOW</h2>
         <p class="join-us-sentence">We’re always looking for people who share our drive to make great games. We celebrate self-starters who care about the details. So, if you’ve always wanted to work on a samurai game set in feudal Japan, then check out our positions below.</p>
-        <a href="Job.html" class="join-us-btn">APPLY NOW</a>
+        <a href="pages/Job.html" class="join-us-btn">APPLY NOW</a>
     </section>
 
     <!-- Footer -->
@@ -111,15 +112,6 @@
             <a href="https://youtube.com/"><img src="https://static-00.iconduck.com/assets.00/youtube-icon-2048x1437-0zwl4mo9.png" alt="YouTube"></a>
         </div>
     </footer>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("nav-links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+        <script src="assets/js/main.js" defer></script>
 </body>
 </html>
